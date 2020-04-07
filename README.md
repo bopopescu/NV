@@ -1,4 +1,1 @@
-Night Vision Gaming Website
-login page & register page
-Home page
-
+Night Vision gaming center offical website
