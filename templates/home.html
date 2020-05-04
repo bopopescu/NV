@@ -1,0 +1,21 @@
+{% extends "home_layout.html" %}
+
+{% block home_main %}
+<div class="home_container">
+  <div class="left">
+    <h4>Enter management Password</h4>
+    <small>If you already have a password it will reset</small>
+    <form class="management" action="/home" method="post">
+      <div class="form-group">
+        <label for="manage_password">Password</label>
+        <input name="management" type="password" class="form-control" id="manage_password">
+      </div>
+      <button type="submit" class="btn btn-primary">Set</button>
+    </form>
+  </div>
+  <div class="right">
+    <h1>Management</h1>
+    <p>Management can enter sales summary, purchase details and credit list, once they entered the details they can't change any details after submitting</p>
+  </div>
+</div>
+{% endblock %}

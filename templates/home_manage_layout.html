@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Management
+{% endblock %}
+
+{% block name %}
+<h2><span class="greenLetter">Night</span> Vision</h2>
+{% endblock %}
+
+{% block a %}
+<a href="/logout" class="greenLetter">logout</a>
+{% endblock %}
+
+{% block main %}
+<header class="home_nav">
+    <ul>
+      <li>Summary</li>
+      <li><a href="#" class="greenLetter">Purchase</a></li>
+      <li><a href="#" class="greenLetter">Credit List</a></li>
+    </ul>
+</header>
+{% block home_main %}{% endblock %}
+{% endblock %}

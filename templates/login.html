@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Welcome to login page
+{% endblock %}
+{% block name %}
+<a href="/">
+  <h2><span class="greenLetter">Night</span> Vision</h2>
+</a>
+{% endblock %}
+
+{% block main %}
+<div class="Registered">
+  <p>Registerd</p>
+</div>
+<div class="container_div">
+  <div class="login_div">
+    <h3>Log In</h3>
+    <form class="loginForm" action="/login" method="post" id="login_form">
+      <div class="form-group">
+        <label for="formcontrol_log">Select</label>
+        <select name="user" class="form-control" id="formcontrol_log">
+          <option value="admin" selected>Admin</option>
+          <option value="manage">Management</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="username_log">Username</label>
+        <input name="username_log" type="text" class="form-control username" id="username_log" aria-describedby="emailHelp" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="password_log">Password</label>
+        <input name="password_log" type="password" class="form-control password" id="password_log">
+      </div>
+      <p><small class="error" id="login_err">Invalid username or password</small></p>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary login">Login</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="register_div">
+    <h3>Register</h3>
+    <form class="registerForm" action="/register" method="post" id="register_form">
+      <div class="form-group">
+        <label for="username_regi">Username</label>
+        <input name="username" type="text" class="form-control" id="username_regi" aria-describedby="emailHelp" autocomplete="off">
+        <p><small class="error">Username must be more the 7 characters</small></p>
+      </div>
+      <div class="form-group">
+        <label for="password_regi">Password</label>
+        <input name="password" type="password" class="form-control" id="password_regi">
+        <p><small class="error">Password is weak</small></p>
+      </div>
+      <div class="form-group">
+        <label for="confirm_pass_regi">Confirme Password</label>
+        <input name="confirm-password" type="password" class="form-control" id="confirm_pass_regi">
+        <p><small class="error">Passwrod is not matched</small></p>
+      </div>
+      <div class="form-group">
+        <label for="register_code">Register Code</label>
+        <input name="register-code" type="password" class="form-control" id="register_code">
+        <p><small class="error" id="code-err">Enter the registered code</small></p>
+      </div>
+      <p><small class="error" id="regi-err">Please provide information</small></p>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,185 @@
+/* Font Veriables */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
+/* Design for layout */
+header
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: auto;
+  padding: 15px 25px;
+  margin: auto;
+}
+img
+{
+  width: 10%;
+  padding-left: 10px;
+}
+h2
+{
+  color:#5f5f5f;
+}
+.greenLetter
+{
+  color: #98cb54;
+}
+header a
+{
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: bolder;
+}
+header a:hover
+{
+  text-decoration: none;
+  color:#5f5f5f;
+}
+/* Design For index page */
+main .indexMain
+{
+  text-align: center;
+}
+.mid_img
+{
+  background-image: url("/static/pics/Photo-by-Artiom-Vallat-on-Unsplash.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.contain
+{
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.quote
+{
+  padding: 25px;
+  flex-basis: 400px;
+}
+.quote>p
+{
+  font-size: 55px;
+  font-family: 'Anton', sans-serif;
+  color: #98cb54;
+  line-height: 30px;
+}
+.mapouter
+{
+  position:relative;
+  text-align:right;
+  height:350px;
+  width:500px;
+}
+.gmap_canvas
+{
+  overflow:hidden;
+  background:none!important;
+  height:350px;
+  width:500px;
+}
+.contact
+{
+  text-align: center;
+  align-self: center;
+  flex-basis: 500px;
+}
+.contact table
+{
+  margin: 25px auto;
+}
+.contact h3
+{
+  text-decoration: underline;
+}
+.icon_img
+{
+  width: 25px;
+}
+.contact a
+{
+  font-weight: bolder;
+  color: #98cb54;
+}
+.contact a:hover
+{
+  text-decoration: none;
+  color:#5f5f5f;
+}
+
+/* Design For Loging page */
+main .container_div
+{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px auto;
+  padding: 0;
+}
+.login_div
+{
+  background-color: #98cb54;
+  padding: 45px;
+  border-radius: 15%;
+}
+
+main .Registered
+{
+  text-align: center;
+  width: 100vw;
+  height: 25px;
+  background-color: green;
+  display: none;
+}
+/* Design for loging page --error handle-- */
+.error
+{
+  color: red;
+  font-weight: bolder;
+  display: none;
+}
+
+/* Design for home_layout page */
+.home_nav
+{
+  text-align: center;
+  background-color:  #DAF7A6 ;
+  height: 75px;
+  width: auto;
+}
+.home_nav ul
+{
+  display: flex;
+  justify-content: space-around;
+}
+.home_nav ul li
+{
+  display: inline-block;
+  font-size: 26px;
+}
+
+/* Design for home page */
+.home_container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 50%;
+  padding: 15px 25px;
+  margin: 10% auto;
+  height: auto;
+}
+.right
+{
+  flex-basis: 340px;
+  padding-left: 10%;
+}
+.right p
+{
+  margin: auto;
+}

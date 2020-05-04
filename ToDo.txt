@@ -1,0 +1,5 @@
+header
+  logo logging inputs
+main
+  register table
+  gaming poster
